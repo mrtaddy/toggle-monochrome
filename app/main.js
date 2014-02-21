@@ -1,4 +1,4 @@
 /*jshint strict:false, browser:true */
-(function bookmarklet() {
+(function bookmarklet($) {
   $('html').css('-webkit-filter', 'grayscale(1)');
-}());
+}(jQuery));
