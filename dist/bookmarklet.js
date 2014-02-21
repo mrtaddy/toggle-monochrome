@@ -1,0 +1,2 @@
+// Copy this to your URL bar:
+javascript:!function(){var e=document.createElement("style"),d=document.createTextNode("body { background: cornflowerblue; }");e.appendChild(d),document.head.appendChild(e)}();
