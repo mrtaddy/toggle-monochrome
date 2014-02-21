@@ -1,4 +1,11 @@
-/*jshint strict:false, browser:true */
+/*jshint browser:true */
 (function bookmarklet($) {
-  $('html').css('-webkit-filter', 'grayscale(1)');
+  var $html = $('html');
+  var property = '-webkit-filter';
+  var value = 'grayscale(1)';
+  if($html.css(property) == value){
+    $html.css(property, '');
+  } else {
+    $html.css(property, value);
+  }
 }(jQuery));
