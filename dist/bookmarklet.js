@@ -1,2 +1,2 @@
 // Copy this to your URL bar:
-javascript:!function(s){var c=s("html"),e="-webkit-filter",r="grayscale(1)";c.css(e)==r?c.css(e,""):c.css(e,r)}(jQuery);
+javascript:!function(){var e=document.querySelector("html"),t="-webkit-filter",l="grayscale(1)";e.style.webkitFilter=getComputedStyle(e)[t]==l?"":l}();

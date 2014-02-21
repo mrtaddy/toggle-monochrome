@@ -1,11 +1,11 @@
 /*jshint browser:true */
-(function bookmarklet($) {
-  var $html = $('html');
+(function bookmarklet() {
+  var html = document.querySelector('html');
   var property = '-webkit-filter';
   var value = 'grayscale(1)';
-  if($html.css(property) == value){
-    $html.css(property, '');
+  if(getComputedStyle(html)[property] == value){
+    html.style.webkitFilter = '';
   } else {
-    $html.css(property, value);
+    html.style.webkitFilter = value;
   }
-}(jQuery));
+}());
